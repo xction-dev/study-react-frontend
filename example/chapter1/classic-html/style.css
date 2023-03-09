@@ -1,0 +1,15 @@
+#container{
+    position:relative;
+    width:500px;
+}
+#chat-container {
+    width:100%;
+    padding:30px;
+    background-color: lightblue;
+}
+#inputs{
+    width:100%;
+    padding:30px;
+    background-color: white;
+    border: 1px solid black;
+}
