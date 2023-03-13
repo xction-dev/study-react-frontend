@@ -5,6 +5,9 @@ const chatContainer = document.querySelector("#chat-container");
 
 for (let i =0; i < 5; i++) {
     const chatElement = document.createElement("div")
-    chatElement.innerText="채팅1"
+    chatElement.innerText="채팅3"
     chatContainer.appendChild(chatElement)
 }
+
+const wantToChange = document.querySelector("#wantToChange");
+wantToChange.innerText = "바뀐 후"
