@@ -25,6 +25,9 @@ function YourChat(props) {
 //나머지 채팅 구현. id 따라 나와 상대방 구분
 function ChatBox(props) {
   const { id, text } = props;
+  //const id = props.id
+  //const text = prop.text
+  //props = {id:~~~, text:~~~}
 
   const chatcont_styles = {
     justifyContent: id === "myChat" ? "flex-end" : "flex-start",
