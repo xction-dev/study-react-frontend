@@ -1,0 +1,28 @@
+.input-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C2C2D;
+}
+
+.input-cont p {
+    flex: 0.05;
+    color: #7D8189;
+    font-size: 2em;
+    margin: 0px;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    padding: 0px;
+}
+
+.input-cont input {
+    height: 2.5em;
+    flex: 0.95;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-right: 0.8em;
+    margin-left: 0em;
+    padding: 0.1em;
+    border-radius: 20px;
+    background-color: #383839;
+}
