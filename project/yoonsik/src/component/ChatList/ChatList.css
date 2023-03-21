@@ -1,0 +1,25 @@
+.recipient {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    font-feature-settings: 'case' on;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 6px 12px;
+    background: #E9E9EB;
+    border-radius: 18px;
+    flex: auto;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    width: 270px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    position: relative;
+}
+
+

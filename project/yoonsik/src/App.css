@@ -1,0 +1,9 @@
+.chatbox {
+    position: fixed;
+    bottom: 40px;
+}
+
+.message-send {
+    position: sticky;
+
+}

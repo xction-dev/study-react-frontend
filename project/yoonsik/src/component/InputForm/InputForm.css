@@ -1,0 +1,32 @@
+input[type="text"] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px 4px 2px 12px;
+    gap: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 450px;
+
+    
+    
+    height: 32px;
+
+    /* Neutral/100 */
+    background: #FFFFFF;
+    opacity: 0.4;
+    /* iOS/Color 5 */
+    border: 1px solid #9C9CA3;
+    border-radius: 18px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+.form {
+    background: rgba(233, 233, 235, 0.75);
+    backdrop-filter: blur(30px);
+    padding: 13px;
+    
+}

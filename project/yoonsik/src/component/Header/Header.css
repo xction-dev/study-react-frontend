@@ -1,0 +1,59 @@
+.header {
+    /* Wrap */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+margin-bottom: 40px;
+
+width: flex;
+height: 68px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+background: rgba(233, 233, 235, 0.75);
+backdrop-filter: blur(30px);
+}
+
+.back_button {
+color: #0A84FF;
+/* Icon */
+
+position: relative;
+font-size:larger;
+padding: 20px;
+font-weight: bolder;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px -3px;
+
+}
+
+.name {
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+width: 131px;
+height: 68px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+}
