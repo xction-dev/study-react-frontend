@@ -5,33 +5,69 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 
+const initialChatArray = [
+  "형 프랑스미학 안 옴?",
+  "ㅇㅇ",
+  "ㅋㅋㅋㅋㅋ",
+  "듣고재밌으면알려주셈",
+  "ㅋㅋㅋㅋㅇㅋㅇㅋ",
+  "프랑스미학 재밋냐",
+  "오티는 미학 개괄만 했는디",
+  "교수님 재밌음",
+  "흠...",
+  "고민",
+  "안들을듯근데",
+  "듣자",
+  "잼쓸듯",
+];
+
 function App() {
+  const [headerState, setHeaderState] = useState(false);
+  // const [name, setName] = useState("가나다")
+  const [chatArray, setChatArray] = useState(initialChatArray);
+  const [id, setId] = useState("myChat");
+  const handleButtonClick = (buttonName) => {
+    setId(buttonName);
+  };
+
   return (
-    <div className="container">
+    <div
+      className="container"
+      onClick={() => {
+        setHeaderState(!headerState);
+      }}
+    >
+      {headerState ? <Header name="박준영 형" chat_num={chatArray.length} /> : <div />}
 
-      <Header name="박준영 형"/>
+      <ChatBox id="myChat" text={chatArray[0]} />
 
-      <ChatBox id="myChat" text="형 프랑스미학 안 옴?" />
+      <YourChat name="박준영 형" text={chatArray[1]} />
+      {chatArray.slice(2, 4).map((text) => (
+        <ChatBox id="yourChat" text={text} />
+      ))}
 
-      <YourChat name="박준영 형" text="ㅇㅇ"/>
-      <ChatBox id="yourChat" text="ㅋㅋㅋㅋㅋ" />
-      <ChatBox id="yourChat" text="듣고재밌으면알려주셈" />
+      <ChatBox id="myChat" text={chatArray[4]} />
 
-      <ChatBox id="myChat" text="ㅋㅋㅋㅋㅇㅋㅇㅋ" />
+      <YourChat name="박준영 형" text={chatArray[5]} />
 
-      <YourChat name="박준영 형" text="프랑스미학 재밋냐"/>
+      {chatArray.slice(6, 8).map((text) => (
+        <ChatBox id="myChat" text={text} />
+      ))}
 
-      <ChatBox id="myChat" text="오티는 미학 개괄만 했는디" />
-      <ChatBox id="myChat" text="교수님 재밌음" />
+      <YourChat name="박준영 형" text={chatArray[8]} />
+      {chatArray.slice(9, 11).map((text) => (
+        <ChatBox id="yourChat" text={text} />
+      ))}
 
-      <YourChat name="박준영 형" text="흠..."/>
-      <ChatBox id="yourChat" text="고민" />
-      <ChatBox id="yourChat" text="안들을듯근데" />
+      {chatArray.slice(11, 13).map((text) => (
+        <ChatBox id="myChat" text={text} />
+      ))}
 
-      <ChatBox id="myChat" text="듣자" />
-      <ChatBox id="myChat" text="잼쓸듯" />
+      {chatArray.slice(13, ).map((text) => (
+        {id} === "myChat" ? <ChatBox id="myChat" text={text}/> : <ChatBox id="yourChat" text={text}/> 
+      ))}
 
-      <Input />
+      <Input data={chatArray} setter={setChatArray} handleButtonClick={handleButtonClick} />
     </div>
   );
 }
