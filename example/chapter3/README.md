@@ -23,6 +23,8 @@ yarn install
   - context API
   - react-router
   - typescript
+  - better CSS
+  - fetch, Promise
 
   
 ## 지금까지 배운 내용 정리
@@ -48,6 +50,7 @@ yarn install
 - setter(): 값을 바꾸는 함수
 - 주의할 점: setter 함수는 값을 함수 parameter로 들어온 값과 `교체`한다
 ### 유용한 자바스크립트 문법들
+- Array.map()
 - 구조 분해 할당
 ```js
 const someObject = {property1: "hello", property2: 100};
