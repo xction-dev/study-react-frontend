@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {useState} from 'react';
+import './App.css';
+import "./components/ChatComponents.css";
+import ChatRoom from "./components/ChatRoom";
+import TopBar from "./components/TopBar";
+import {chatData1, chatData2, chatData3} from "./data/chatData";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    const [currentTap, setCurrentTap] = useState(0);
+    return (<div className="container">
+        <TopBar/>
+        {currentTap === 0 && <ul className="ChatList">
+            <li className="ChatPreview" onClick={()=>{
+                setCurrentTap(1);
+            }}>창인</li>
+            <li className="ChatPreview"  onClick={()=>{
+                setCurrentTap(2);
+            }}>윤식</li>
+            <li className="ChatPreview"  onClick={()=>{
+                setCurrentTap(3);
+            }}>피싱</li>
+        </ul>}
+        {currentTap === 1 && <ChatRoom title="창인" id={1} chatData={chatData1}/>}
+        {currentTap === 2 && <ChatRoom title="윤식" id={2} chatData={chatData2}/>}
+        {currentTap === 3 && <ChatRoom title="피싱" id={3} chatData={chatData3}/>}
+    </div>)
 }
 
 export default App
