@@ -10,9 +10,9 @@ function App() {
 
   return (
     <div>
-      <Header name="Apple Store"></Header>
-      <Chat name="chatbox"></Chat>
-      <InputForm name="message-send"></InputForm>
+      <Header name="Apple Store"/>
+      <Chat name="chatbox"/>
+      <InputForm name="message-send"/>
     
 
     </div>
