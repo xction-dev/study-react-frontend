@@ -1,15 +1,20 @@
 import Chat from "./Chat";
 import {useState} from "react";
 
-// @ts-ignore
-export default function ChatRoom({title, id, chatData}) {
-    const [input,setInput] = useState("")
+export default function ChatRoom({
+                                     title,
+                                     id,
+                                     chatData
+                                 }: { title: string, id: number, chatData: { isMe: boolean, text: string }[] }) {
 
-    return <div className="ChatRoom">
+    const [input, setInput] = useState("");
+
+    return (<div className="ChatRoom">
         <div className="chatContainer">
-            {// @ts-ignore
-                chatData.map((datum, index) => <Chat key={index} isMe={datum.isMe} content={datum.text} />)}
+            {chatData.map((datum, index) => <Chat key={index} isMe={datum.isMe} content={datum.text}/>)}
         </div>
-            <input className="inputWrapper" value={input} onChange={(e)=>{setInput(e.target.value)}}/>
-    </div>
+        <input className="inputWrapper" value={input} onChange={(e) => {
+            setInput(e.target.value)
+        }}/>
+    </div>)
 }
