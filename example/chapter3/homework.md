@@ -52,6 +52,7 @@
 ```json
 [
   {
+    "id": 0,
     "to": "준영",
     "title": null,
     "chatData": [
@@ -105,6 +106,7 @@
     "isOpenChat": false
   },
   {
+    "id": 1,
     "to": "서현",
     "title": "이서현 감독님",
     "chatData": [
@@ -138,6 +140,7 @@
     "isOpenChat": false
   },
   {
+    "id": 2,
     "to": "면접관",
     "title": "Xction 면접",
     "chatData": [
