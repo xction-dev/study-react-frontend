@@ -1,0 +1,114 @@
+[
+  {
+    "id": 0,
+    "to": "준영",
+    "title": null,
+    "chatData": [
+      {
+        "id": 0,
+        "isMine": true,
+        "content": "수업 끝남?"
+      },
+      {
+        "id": 1,
+        "isMine": true,
+        "content": "바로 설입감?"
+      },
+      {
+        "id": 2,
+        "isMine": false,
+        "content": "ㅇㅇ 끝남"
+      },
+      {
+        "id": 3,
+        "isMine": false,
+        "content": "도서관 있다가"
+      },
+      {
+        "id": 4,
+        "isMine": false,
+        "content": "갈거 같은디"
+      },
+      {
+        "id": 5,
+        "isMine": true,
+        "content": "나 사라진데"
+      },
+      {
+        "id": 6,
+        "isMine": true,
+        "content": "사라지 오셈"
+      },
+      {
+        "id": 7,
+        "isMine": false,
+        "content": "콘센트 있음?"
+      },
+      {
+        "id": 8,
+        "isMine": true,
+        "content": "ㅇㅇ"
+      }
+    ],
+    "profile": null,
+    "isOpenChat": false
+  },
+  {
+    "id": 1,
+    "to": "서현",
+    "title": "이서현 감독님",
+    "chatData": [
+      {
+        "id": 0,
+        "isMine": true,
+        "content": "나 할 일이 너무 많아"
+      },
+      {
+        "id": 1,
+        "isMine": true,
+        "content": "마음의 여유가 없어서"
+      },
+      {
+        "id": 2,
+        "isMine": true,
+        "content": "컷편을 할 수가 없어"
+      },
+      {
+        "id": 3,
+        "isMine": false,
+        "content": "마음의 여유를 좀 찾아봐"
+      },
+      {
+        "id": 4,
+        "isMine": false,
+        "content": "컷편 같이할 사람 없나?"
+      }
+    ],
+    "profile": null,
+    "isOpenChat": false
+  },
+  {
+    "id": 2,
+    "to": "면접관",
+    "title": "Xction 면접",
+    "chatData": [
+      {
+        "id": 0,
+        "isMine": false,
+        "content": "Xction 면접에 지원해주셔서 감사합니다"
+      },
+      {
+        "id": 1,
+        "isMine": false,
+        "content": "내일 8시에 줌 링크로 접속해주시면 됩니다."
+      },
+      {
+        "id": 2,
+        "isMine": true,
+        "content": "네 갑사합니다"
+      }
+    ],
+    "profile": null,
+    "isOpenChat": true
+  }
+]
