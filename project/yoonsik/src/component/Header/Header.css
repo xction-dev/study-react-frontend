@@ -1,59 +1,70 @@
 .header {
-    /* Wrap */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-margin-bottom: 40px;
-
-width: flex;
-height: 68px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-
-background: rgba(233, 233, 235, 0.75);
-backdrop-filter: blur(30px);
-}
-
-.back_button {
-color: #0A84FF;
-/* Icon */
-
-position: relative;
-font-size:larger;
-padding: 20px;
-font-weight: bolder;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px -3px;
-
-}
-
-.name {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 10px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-width: 131px;
-height: 68px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    width: 393px;
+    height: 78px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 1;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    background: rgba(233, 233, 235, 0.75);
+    backdrop-filter: blur(30px);
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+    gap: 10px;
+    margin-bottom: 22px;
+
+    width: 131px;
+    height: 78px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+.title {
+    font-size: smaller;
+    font-weight: 200;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 3px;
+    margin-top: 70px;
+    margin-left: 3px;
+
+    width: 27px;
+    height: 13px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.backbotton {
+    position: absolute;
+    margin-left: 1rem;
+    cursor: pointer;
 }
