@@ -1,16 +1,19 @@
 import React from 'react';
 import './Header.css';
+import BackBotton from '/src/assets/chevron.left.svg'
+import Profile from '/src/assets/Profile.svg'
 
-function Header(props) {
-    const {name} = props;
-
+function Header() {
     return (
         <div className="header">
-            <div className="back_button">&lt;</div>
-            <div className="name">{name}</div>
+            <img src={BackBotton} className="backbotton"></img>
+            <div className="profile">
+                <img src={Profile}></img>
+                <div className="title">준영</div>
+            </div>
         </div>
     );
 }
 
-export { Header };
+export default Header;
 

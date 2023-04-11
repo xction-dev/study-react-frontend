@@ -1,9 +1,5 @@
-.chatbox {
-    position: fixed;
-    bottom: 40px;
-}
-
-.message-send {
-    position: sticky;
-
+.container {
+    position: relative;
+    width: 393px;
+    height: 852px;
 }

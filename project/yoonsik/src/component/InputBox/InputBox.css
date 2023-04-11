@@ -1,0 +1,65 @@
+.input-box input {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 100px;
+    font-size: 16px;
+
+    /* Auto layout */
+
+    display: flex;
+    align-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px 4px 2px 12px;
+    gap: 4px;
+
+    width: 255px;
+    height: 32px;
+
+    /* Neutral/100 */
+
+    background: #FFFFFF;
+    opacity: 0.4;
+    /* iOS/Color 5 */
+
+    border: 1px solid #9C9CA3;
+    border-radius: 18px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+
+}
+
+.input-box button {
+    position: absolute;
+    * Right Content */
+
+
+/* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0px;
+
+    width: 35px;
+    height: 26px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    osition: absolute;
+    margin-top: 205px;
+    margin-left: 320px;
+    font-size: 16px;
+}
+
