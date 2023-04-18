@@ -6,7 +6,7 @@ import Profile from '/src/assets/Profile.svg'
 function Header() {
     return (
         <div className="header">
-            <img src={BackBotton} className="backbotton"></img>
+            <img src={BackBotton} className="backbotton" style={{cursor: 'pointer'}}></img>
             <div className="profile">
                 <img src={Profile}></img>
                 <div className="title">준영</div>
